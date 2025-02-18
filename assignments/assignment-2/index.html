@@ -3,51 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Emma Wright - Portfolio </title>
+          <title>Emma Wright - Portfolio </title>
+
+             <!-- for search engines -->
+             <meta name="description" content="Emma Wright's Portfolio">
+             <meta name="keywords" content="Emma Wright, Student, Portfolio, Computer Science, Web Development">
+        <!-- for icon at the top of the browser -->
+        <link rel="icon" type="Image-icon" href="favicon.ico">
     </head>
     <body>
         <header>   
-        <h1>Emma Wright</h1>
-        <!-- <img src="    " alt="Your name's profile picture"   -->
+         <h1>Emma Wright</h1>
+         <!-- <img src="    " alt="Your name's profile picture"    if you want to add a profile pic -->
         </header>
-        <h2>About Me</h2>
+          <h2>About Me</h2>
                 <p>My name is Emma Wright, I am studying Computer Science at San Francisco State University.  <br> I am from Birmingham, England.</p>
-            <img src="birmingham-england-10.jpg" alt="Birmingham, England" style="width: 300px; height: 200px;">
-            <img src="Untitled.jpg" alt="Birmingham, Bull" style="width: 300px; height: 200px;">
+                   <img src="birmingham-england-10.jpg" alt="Birmingham, England" style="width: 300px; height: 200px;">
+                   <img src="Untitled.jpg" alt="Birmingham, Bull" style="width: 300px; height: 200px;">
             <br>
-            <img src="SFState_H_rgb-1024x268.jpg" alt="SF State Logo" style="width: 605px; height: 180px;">
+                <img src="SFState_H_rgb-1024x268.jpg" alt="SF State Logo" style="width: 605px; height: 180px;">
             <br>
         
             <nav>
                 <ul>
-                    <li><a href="#contacts"> Link to contact</a></li>
+                    <!-- links to other sections in the page -->
                     <li><a href="#education">Link to education</a></li>
                     <li><a href="#experience">Link to experience</a></li>
-                    <li><a href="#contact me">Link to contact me</a></li>
+                    <li><a href="#projects">Link to projects</a></li>
+                    <li><a href="#contactmeform">Link to contact me</a></li>
+                    <li><a href="#contacts"> Link to contact</a></li>
+
                 </ul>
             </nav>
-
             <br>
             <br>
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
             <main>
-                <section id="contacts">
-                    <h2>Contact</h2>
-                    <p>Email: Emmwright9@gmail.com </p>
-                    <p>Phone: 415-637-6329</p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/emma-wright-a81743271/">Emma Wright</a></p>
-                </section>
-                <br>
                 <section id="education">
                     <h2>Education</h2>
                     <ul>
@@ -61,15 +54,49 @@
                     <h2>Experience</h2>
                     <ol>
                         <li>Teamleader at a carework company 2013-2018</li>
-                        <li>Completed the "Learn to Prgram in Java" by Microsoft</li>
+                        <li>Completed the "Learn to Program in Java" by Microsoft</li>
                         <li>Completed the "C Programming: Getting Started" by Dartmouth </li>
                     </ol>
-                </main>
+                </section>
+                <br>
+                <section id="projects">
+                    <article>
+                        <h2>Project Title</h2>
+                        <img src="project.jpg" alt="Project Image" style="width: 300px; height: 200px;">
+                        <p>Description of the project goes here..</p>
+                    </article>
+                </section>
+                    <br>
+
+                <form>
+                        <!-- form box -->
+                        <h2>Message Me!</h2>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="30"></textarea><br>
+                        <input type="submit" value="Submit">
+
+                </form>
             </main>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer>
+            <section id="contacts">
+                <h3>Contact</h3>
+                <p>Email: Emmwright9@gmail.com </p>
+                <p>Call phone: <a href="tel:+14156376329">415-637-6329</a> </p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/emma-wright-a81743271/" target="_blank" rel="noopener norefferrer">Emma Wright</a></p> <!-- target="_blank" opens the link in a new tab, rel="noopener noreffer" doesnt inform the page where you came from -->
+            </section>
+        </footer>
 
-     
-        <!-- add a <main>, <article>, <section> </main>, then add a <footer> which can also have sections-->
+            <div style="height: 100px;"></div>
+            <p>&copy; 2025 Emma Wright &bull; All rights reserved</p>
+            <div style="height: 50px;"></div>
 
-            <div style="height: 200px;"></div>"
     </body>
 </html>
