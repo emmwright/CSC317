@@ -17,9 +17,10 @@
     </head>
     <body>
         <header>  
-         <img src="images/bitmoji.png" alt="Ems bitmoji" style="width: 90px; height: 95px;"> 
+         <img src="images/bitmoji.png" alt="Ems bitmoji" class="bitmoji" style="width: 90px; height: 95px;"> 
          <h1>Emma Wright</h1>
         </header>
+        <br>
         <br>
               <nav>
                 <ul class="navlist">
@@ -33,8 +34,6 @@
                 </ul>
             </nav>
             <br>
-            <br>
-            <br>
             <!--
                <img src="images/birmingham-england-10.jpg" alt="Birmingham, England" style="width: 300px; height: 200px;">
                <img src="images/Untitled.jpg" alt="Birmingham, Bull" style="width: 300px; height: 200px;">           
@@ -43,6 +42,7 @@
             <div style="display: flex; margin-left: 200px;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12623.235176282926!2d-122.49024022917285!3d37.7241657243239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7db005c0e281%3A0xa57a7c9f946a45d3!2sSan%20Francisco%20State%20University!5e0!3m2!1sen!2sus!4v1739905060012!5m2!1sen!2sus" width="220" height="140" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div> -->
+                <img src="images/pink-gg-bridge.jpeg" alt="Golden Gate Bridge" style="width: 550px; height: 160px;" class="ggbridge">
         <br>
             <main>
                 <section id="aboutme">
@@ -53,7 +53,7 @@
                <br>
                 <section id="education">
                     <h2>Education</h2>
-                    <ul>
+                    <ul class="educationlist">
                         <li>San Francisco State University, Bachelor of Science in Computer Science, Expected Graduation: December 2026 </li>
                         <li>City College of San Francisco, Associates of Science (AS) in Computer Science, Associate of Arts (AA) in Liberal arts - Science & Math: Completed December 2024 </li> 
                         <li>Level 3 Diploma in Health and Social Care: January 2017</li>   
@@ -70,12 +70,9 @@
                 </section>
                 <br>
                 <section id="projects">
-                    <article>
                         <h2>Projects</h2>
-                      <!--  <img src="project.jpg" alt="Project Image" style="width: 300px; height: 200px;"> -->
                         <h4>Portfolio Website</h4>
                         <p>This is my portfolio website</p>
-                    </article>
                 </section>
                     <br>
                 <form>
@@ -88,7 +85,7 @@
                         <input type="email" id="email" name="email"><br>
                         <label for="message">Message:</label><br>
                         <textarea id="message" name="message" rows="4" cols="30"></textarea><br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit">
                     </section>
                 </form>
             </main>
