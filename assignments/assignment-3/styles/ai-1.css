@@ -1,0 +1,183 @@
+/* AI-Generated CSS with Text Prompt. */
+
+/* Can you please generate a complete CSS file for me, I would like it to look like this:
+A colour scheme of neutral lighter browns and nude type colours.
+I like the monospace fonts such as Lucida Console or Monaco.
+For the layout, I dont mind what it is but I dont want it to be centered and straight down the middle, something more fun.
+I want the navigation links to stand out a little and have fun interactions. */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Lucida Console', Monaco, monospace;
+    background-color: #f9f0e2; /* Light beige/nude background */
+    color: #5c4033; /* Dark brown text */
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #6d4b3b; /* Medium brown */
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Navigation Styling */
+nav {
+    margin-top: 20px;
+    position: relative;
+}
+
+.navlist {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navlist li {
+    position: relative;
+}
+
+.navlist a {
+    color: #6d4b3b;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navlist a:hover {
+    color: #fff;
+    background-color: #8e5c45; /* Lighter brown for hover */
+    border-radius: 5px;
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Fun Layout */
+main {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+section {
+    flex: 1 1 40%; /* Allow sections to take up 40% of the width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 28px;
+    color: #6d4b3b;
+    margin-bottom: 10px;
+}
+
+section p, section ul, section ol {
+    font-size: 16px;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    z-index: 1000;
+}
+
+.theme-switcher h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.theme-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.theme-button {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.theme-button:hover {
+    background-color: #e0e0e0;
+}
+
+.theme-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #0069d9;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #6d4b3b;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Contact Section */
+#contacts {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+#contacts a {
+    color: #6d4b3b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contacts a:hover {
+    color: #8e5c45;
+}
+
+/* Button Styling */
+input[type="submit"], .theme-button {
+    background-color: #8e5c45;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, .theme-button:hover {
+    background-color: #6d4b3b;
+}
