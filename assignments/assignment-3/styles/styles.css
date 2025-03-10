@@ -1,12 +1,20 @@
 /* hand coded CSS file */
 
+
+:root { 
+ --font-body: 'Arial', sans-serif; 
+ --border-radius: 10px; 
+ --primary-color: #EDEDE9;
+ --secondary-color: #D6F0D0;
+ --bg-color: #EDEDE9;
+ }
+
 /* body */
 body {
     background-color: #EDEDE9;
-    font-family: 'Arial', sans-serif;
     color: #4F172A;
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
 }
 
 /*header*/
@@ -32,7 +40,8 @@ h1 {
   .navlist {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    flex: auto;
+    width: 97%;
     height: 50px;
     justify-content: space-between;
     align-items: center;
@@ -48,10 +57,16 @@ h1 {
     font-weight: bold;
   }
 
-  .ggbridge {
-    display: block;
-    margin: 0 auto;
+/* pink golden gate picture */
+  .ggbridge-container {
+    width: 600px;
+    height: 160px;
+    background: url(../images/pink-gg-bridge.jpeg) no-repeat center;
+    background-size: contain;
+    margin: 20px auto;
+    border-radius: 10px;
   }
+
 
   /* header h2, h3 */
 h2, h3 {
@@ -108,6 +123,9 @@ h2, h3 {
   font-size: 16px;
   margin-left: 20px;
   box-shadow: #000000 0px 0px 3px;
+}
+#submit:hover {
+  background-color: #E3A0B8;
 }
 
 /* footer */
