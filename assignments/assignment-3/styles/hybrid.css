@@ -12,7 +12,7 @@
    body {
     font-family: 'Lucida Console', Monaco, monospace;
     background-color: #FFDBC2; /* changed the colour */
-    color: #FFDBC2; /* changed the colour*/
+    color: #F2CED4; /* changed the colour*/
     line-height: 1.6;
     font-size: 16px;
     padding: 20px;
@@ -48,7 +48,7 @@ header {
 
    h1 { /* from mine */
        color: #FFDBC2; /* colour for name */
-       font-size: 38;
+       font-size: 38px;
        font-family: 'Arial', sans-serif;
        font-weight: bold;
        text-shadow: 2px 2px 2px #000000;

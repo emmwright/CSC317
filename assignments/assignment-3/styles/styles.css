@@ -13,8 +13,8 @@
 body {
     background-color: #EDEDE9;
     color: #4F172A;
-    margin: 10;
-    padding: 10;
+    margin: 10px;
+    padding: 10px;
 }
 
 /*header*/
@@ -27,7 +27,7 @@ header {
     width: 97%;}
 h1 {
     color: #9D2F54;
-    font-size: 38;
+    font-size: 38px;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
     text-shadow: 2px 2px 2px #000000;
