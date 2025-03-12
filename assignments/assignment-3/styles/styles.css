@@ -14,7 +14,7 @@ body {
     background-color: #EDEDE9;
     color: #4F172A;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
 /*header*/
@@ -59,12 +59,12 @@ h1 {
 
 /* pink golden gate picture */
   .ggbridge-container {
-    width: 600px;
-    height: 160px;
+    width: 100%;
+    height:auto;
     background: url(../images/pink-gg-bridge.jpeg) no-repeat center;
-    background-size: contain;
-    margin: 20px auto;
-    border-radius: 10px;
+    background-size: cover;
+    /* margin: 20px auto;
+    border-radius: 10px; */
   }
 
 
