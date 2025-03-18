@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JavaScript Practice
+        </title>
+    </head>
+    <body>
+        <h1>
+            JavaScript week 0 practice
+        </h1>
+        <button id="greetButton">Click me</button>
+        <div id ="output"></div>
+
+        <script src="hello.js"></script>
+        <script>
+            document.getElementById("greetButton").addEventListener("click", function() {
+                document.getElementById("output").textContent = createMessage("Emma");
+            });
+        </script>
+    </body>
+</html>
