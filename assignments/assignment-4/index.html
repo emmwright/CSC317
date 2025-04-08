@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
     <head>
-        <title>
-            JavaScript Practice
-        </title>
+        <meta charset="UTF-8">
+        <title> Calculator </title>
+        <link rel="stylesheet" href="styling.css">
+        <script src="javascript.js"></script>
     </head>
     <body>
         <h1>
-            JavaScript week 0 practice
+            Calculator
         </h1>
-        <button id="greetButton">Click me</button>
-        <div id ="output"></div>
+        <div class ="calculator container">
+            <div class="display" id="display">0</div> <!-- start with 0 displaying -->
+    
+    <!-- BUTTONS -->
+            <div class="buttons">  
+    <!-- TOP LINE: AC, +/-, %, / -->
+            <button class="button AC">AC</button>
+            <button class="button plus-minus">+/-</button>
+            <button class="button percentage">%</button>
+            <button class="button divide">/</button>
+    <!-- SECOND LINE: 7, 8, 9, x -->
+            <button class="button num">7</button>
+            <button class="button num">8</button>
+            <button class="button num">9</button>
+            <button class="button multiply">*</button>
+    <!-- THIRD LINE: 4, 5, 6, - -->
+            <button class="button num">4</button>
+            <button class="button num">5</button>
+            <button class="button num">6</button>
+            <button class="button minus">-</button>
+    <!-- FOURTH LINE: 1, 2, 3, + -->
+            <button class="button num">1</button>
+            <button class="button num">2</button>
+            <button class="button num">3</button>
+            <button class="button plus">+</button>
+    <!-- LAST LINE: 0, ., = -->
+            <button class ="button num">0</button>
+            <button class ="button decimal">.</button>
+            <button class ="button equals">=</button>
 
-        <script src="hello.js"></script>
-        <script>
-            document.getElementById("greetButton").addEventListener("click", function() {
-                document.getElementById("output").textContent = createMessage("Emma");
-            });
-        </script>
+            </div>
+        </div>
     </body>
 </html>
