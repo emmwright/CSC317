@@ -201,7 +201,7 @@
             });
 
             // Check if there's a saved theme preference
-            const savedTheme = localStorage.getItem('preferredTheme');
+            const savedTheme = localStorage.getItem('preferredTheme') || "styles_hybrid";
             if (savedTheme) {
                 setActiveTheme(savedTheme);
             }
