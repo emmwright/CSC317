@@ -65,19 +65,6 @@ decimalButton.addEventListener('click', () => {
   }
 });
 
-decimalButton.addEventListener('click', () => {
-  const displayText = display.textContent;
-  const parts = displayText.split(/[\+\-\x\/]/);
-  const currentNumber = parts[parts.length - 1];
-
-  if (!currentNumber.includes(".")) {
-    display.textContent += ".";
-  }
-});
-
-
-
-
 plusMinusButton.addEventListener('click', () => {
   if (display.textContent.startsWith("-")) {
     display.textContent = display.textContent.slice(1);
