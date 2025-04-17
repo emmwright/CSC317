@@ -6,6 +6,9 @@ I like the monospace fonts such as Lucida Console or Monaco.
 For the layout, I dont mind what it is but I dont want it to be centered and straight down the middle, something more fun.
 I want the navigation links to stand out a little and have fun interactions. */
 
+
+/* Improved this using AI and the feedback given from assignment 3 */
+
 /* General Reset */
 * {
     margin: 0;
@@ -202,3 +205,62 @@ input[type="submit"]:hover,
 #projects a:hover {
     color: #372709;
 }
+
+/* Shift the experience list slightly to the right */
+#experience ol {
+    padding-left: 30px;  /* move it to the right */
+    margin-left: 0;
+  }
+  
+  #experience li {
+    margin-bottom: 8px;
+  }
+  
+  /* 📱 Responsive Layout for Small Screens */
+@media (max-width: 768px) {
+    body {
+      padding: 10px;
+      font-size: 15px;
+    }
+  
+    header h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    nav {
+      text-align: center;
+    }
+  
+    .navlist {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    main {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    section {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    #contacts {
+      font-size: 15px;
+    }
+  
+    footer {
+      font-size: 14px;
+    }
+  
+    .theme-switcher {
+      bottom: 10px;
+      right: 10px;
+      padding: 8px;
+      width: auto;
+    }
+  }
+  
