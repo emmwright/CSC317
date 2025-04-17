@@ -7,7 +7,12 @@
 
 
 <!-- Link calculator.html to the styles file-->
-<link rel="stylesheet" href="styles/calculator.css" id="css-theme">
+<!-- <link rel="stylesheet" href="styles/calculator.css" id="css-theme"> -->
+<script>
+        const preferred = localStorage.getItem('preferredTheme') || 'calculator';
+        document.write(`<link rel="stylesheet" href="styles/${preferred}.css" id="css-theme">`);
+      </script>
+      
 
 
 <style>
@@ -116,14 +121,7 @@
         </div>
     </div>
 
-
-<script>
-        if (!localStorage.getItem('preferredTheme')) {
-          localStorage.setItem('preferredTheme', 'calculator');
-        }
-      </script>
       
-
 
     <!-- Theme Switcher Script -->
     <script>

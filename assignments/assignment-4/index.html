@@ -166,6 +166,12 @@
         </div>
     </div>
 
+    <script>
+        if (!localStorage.getItem('preferredTheme')) {
+          localStorage.setItem('preferredTheme', 'styles_hybrid');
+        }
+      </script>
+
     <!-- Theme Switcher Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
