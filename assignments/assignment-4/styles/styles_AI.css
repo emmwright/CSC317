@@ -216,7 +216,7 @@ input[type="submit"]:hover,
     margin-bottom: 8px;
   }
   
-  /* 📱 Responsive Layout for Small Screens */
+  📱 Responsive Layout for Small Screens
 @media (max-width: 768px) {
     body {
       padding: 10px;
