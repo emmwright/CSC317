@@ -8,7 +8,12 @@
     <title>Emma Wright - Portfolio </title>
 
     <!-- Link index.html to the styles file-->
-    <link rel="stylesheet" href="styles/styles.css" id="css-theme">
+    <!-- <link rel="stylesheet" href="styles/styles.css" id="css-theme"> -->
+    <script>
+        const preferred = localStorage.getItem('portfolioTheme') || 'styles_hybrid';
+        document.write(`<link rel="stylesheet" href="styles/${preferred}.css" id="css-theme">`);
+      </script>
+      
 
     <style>
         /* Theme Switcher Styling */
@@ -166,11 +171,6 @@
         </div>
     </div>
 
-    <script>
-        if (!localStorage.getItem('preferredTheme')) {
-          localStorage.setItem('preferredTheme', 'styles_hybrid');
-        }
-      </script>
 
     <!-- Theme Switcher Script -->
     <script>
@@ -207,7 +207,7 @@
             });
 
             // Check if there's a saved theme preference
-            const savedTheme = localStorage.getItem('preferredTheme') || "styles_hybrid";
+            const savedTheme = localStorage.getItem('portfolioTheme') || "styles_hybrid";
             if (savedTheme) {
                 setActiveTheme(savedTheme);
             }

@@ -9,7 +9,7 @@
 <!-- Link calculator.html to the styles file-->
 <!-- <link rel="stylesheet" href="styles/calculator.css" id="css-theme"> -->
 <script>
-        const preferred = localStorage.getItem('preferredTheme') || 'calculator';
+        const preferred = localStorage.getItem('calculatorTheme') || 'calculator';
         document.write(`<link rel="stylesheet" href="styles/${preferred}.css" id="css-theme">`);
       </script>
       
@@ -146,7 +146,7 @@
                 });
 
                 // Save preference to localStorage
-                localStorage.setItem('preferredTheme', themeName);
+                localStorage.setItem('calculatorTheme', themeName);
             }
 
             // Add click event to all theme buttons
@@ -158,7 +158,7 @@
             });
 
             // Check if there's a saved theme preference
-            const savedTheme = localStorage.getItem('preferredTheme');
+            const savedTheme = localStorage.getItem('calculatorTheme');
             if (savedTheme) {
                 setActiveTheme(savedTheme);
             }
