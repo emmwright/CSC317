@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Wright - Portfolio </title>
+
+    <!-- Link index.html to the styles file-->
+    <!-- <link rel="stylesheet" href="styles/styles.css" id="css-theme"> -->
+    <script>
+        const preferred = localStorage.getItem('portfolioTheme') || 'styles_hybrid';
+        document.write(`<link rel="stylesheet" href="styles/${preferred}.css" id="css-theme">`);
+      </script>
+      
+
+    <style>
+        /* Theme Switcher Styling */
+        .theme-switcher {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 12px;
+            z-index: 1000;
+        }
+
+        .theme-switcher h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .theme-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .theme-button {
+            padding: 8px 12px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .theme-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .theme-button.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #0069d9;
+        }
+    </style>
+
+    <!-- for search engines -->
+    <meta name="description" content="Emma Wright's Portfolio">
+    <meta name="keywords" content="Emma Wright, Student, Portfolio, Computer Science, Web Development, HTML">
+    <!-- for icon at the top of the browser -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/bitmoji.png" alt="Ems bitmoji" class="bitmoji" style="width: 90px; height: 95px;">
+        <h1>Emma Wright</h1>
+    </header>
+    <br>
+    <br>
+    <nav>
+        <ul class="navlist">
+            <!-- links to other sections in the page -->
+            <li><a href="#aboutme">Link to about me</a></li>
+            <li><a href="#education">Link to education</a></li>
+            <li><a href="#experience">Link to experience</a></li>
+            <li><a href="#projects">Link to projects</a></li>
+            <li><a href="#contactmeform">Link to contact me</a></li>
+            <li><a href="#contacts"> Link to contact info</a></li>
+        </ul>
+    </nav>
+    <br>
+    <main>
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <p>My name is Emma Wright, I am currently pursuing a Batchelor's degree in Computer Science at San Francisco
+                State University. <br> I am from Birmingham, England.</p>
+            <p>I moved to the United States 7 years ago as an Au Pair and then decided to further my education and
+                opportunities. <br> I have an associates degree in computer science and another in liberal arts in
+                science and math.</p>
+        </section>
+        <br>
+        <section id="education">
+            <h2>Education</h2>
+            <ul class="educationlist">
+                <li>San Francisco State University, Bachelor of Science in Computer Science, Expected Graduation:
+                    December 2026 </li>
+                <li>City College of San Francisco, Associates of Science (AS) in Computer Science, Associate of Arts
+                    (AA) in Liberal arts - Science & Math: Completed December 2024 </li>
+                <li>Level 3 Diploma in Health and Social Care: January 2017</li>
+            </ul>
+        </section>
+        <br>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ol>
+                <li>Teamleader at a carework company 2013-2018</li>
+                <li>Completed the "Learn to Program in Java" by Microsoft</li>
+                <li>Completed the "C Programming: Getting Started" by Dartmouth </li>
+            </ol>
+        </section>
+        <br>
+        <section id="projects">
+            <h2>Projects</h2>
+            <h4>JavaScript Calculator.</h4>
+            <p>Functional calculator that is a Iphone calculator look-a-like. </p>
+            <p>Built using HTML, CSS, and JavaScript</p>
+            <a href="calculator.html" class="button" target="_blank">Link to view calculator</a>
+            <img src="images/calculator-preview.png" alt="Calculator screenshot"
+                style="max-width: 150px; height: auto;">
+            <h4>PantryPal Recipes Website, group project</h4>
+            <p>A website created for users to store and view recipes. Users can register, log in, add their own recipes, edit/delete their recipes and view other recipes.</p>
+            <p>Filter recipes based on dietry needs, price range and preperation time.</p>
+            <p>Built using HTML, CSS, JavaScript, EJS for templates, Node.js and MongoDB.</p>
+            <a href="https://csc317-group-k.onrender.com/" class="button" target="_blank">Link to view
+                PantryPal website</a>
+            <img src="images/PantryPal1.png" alt="PantryPal screenshot"
+                style="max-width: 600px; height: auto;">
+            <img src="images/PantryPal2.png" alt="PantryPal screenshot"
+                style="max-width: 600px; height: auto;">
+            <img src="images/PantryPal3.png" alt="PantryPal screenshot"
+                style="max-width: 600px; height: auto;">
+        </section>
+        <br>
+        <form>
+            <section id="contactmeform">
+                <!-- form box -->
+                <h3>Message Me!</h3>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea><br>
+                <input type="submit" value="Submit" id="submit">
+            </section>
+        </form>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <section id="contacts">
+            <h3>Contact</h3>
+            <p>Email: Emmwright9@gmail.com </p>
+            <p>Call phone: <a href="tel:+14156376329">415-637-6329</a> </p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/emma-wright-a81743271/" target="_blank"
+                    rel="noopener norefferrer">Emma Wright</a></p>
+            <!-- target="_blank" opens the link in a new tab, rel="noopener noreffer" doesnt inform the page where you came from -->
+        </section>
+    </footer>
+    <br>
+    <br>
+    <div style="height: 100px;"></div>
+    <p>&copy; 2025 Emma Wright &bull; All rights reserved</p>
+    <div style="height: 50px;"></div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <h3>Theme Switcher</h3>
+        <div class="theme-buttons">
+            <!--  <button class="theme-button active" data-theme="styles">Hand-Written</button> -->
+            <button class="theme-button" data-theme="styles_AI">Theme 1</button>
+            <button class="theme-button" data-theme="styles_hybrid">Theme 2</button>
+        </div>
+    </div>
+
+
+    <!-- Theme Switcher Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all theme buttons
+            const themeButtons = document.querySelectorAll('.theme-button');
+            // Get the stylesheet link element
+            const themeStylesheet = document.getElementById('css-theme');
+
+            // Function to set active theme
+            function setActiveTheme(themeName) {
+                // Update stylesheet href
+                themeStylesheet.href = `styles/${themeName}.css`;
+
+                // Update active button state
+                themeButtons.forEach(button => {
+                    if (button.dataset.theme === themeName) {
+                        button.classList.add('active');
+                    } else {
+                        button.classList.remove('active');
+                    }
+                });
+
+                // Save preference to localStorage
+                localStorage.setItem('preferredTheme', themeName);
+            }
+
+            // Add click event to all theme buttons
+            themeButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const themeName = this.dataset.theme;
+                    setActiveTheme(themeName);
+                });
+            });
+
+            // Check if there's a saved theme preference
+            const savedTheme = localStorage.getItem('portfolioTheme') || "styles_hybrid";
+            if (savedTheme) {
+                setActiveTheme(savedTheme);
+            }
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

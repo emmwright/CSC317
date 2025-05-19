@@ -1,0 +1,192 @@
+/* AI-Generated CSS with Image and Text prompt */
+
+/* https://assets.site-static.com/userFiles/2805/image/Blog_Post_Images/Living_In_Hawaii/Sunset.jpg
+
+can you create me a complete CSS file using this image as the theme please. Can you focus more on the sunset kind of colours but not make it too bright!
+Can the page have a flowly/less block like style please.  */
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Lucida Console', Monaco, monospace;
+    background-color: #f1d2a4; /* Light amber */
+    color: #3b2e2a; /* Darker brown for text */
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 20px;
+    background-image: url('https://assets.site-static.com/userFiles/2805/image/Blog_Post_Images/Living_In_Hawaii/Sunset.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Gradient Overlay to avoid harshness from the image */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Darker overlay for a subtle effect */
+    z-index: -1;
+}
+
+/* Header */
+header {
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    position: relative;
+    margin-top: 40px;
+}
+
+.navlist {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+}
+
+.navlist li {
+    position: relative;
+}
+
+.navlist a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navlist a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-5px);
+}
+
+/* Section Styling */
+main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-3px);
+}
+
+section h2 {
+    font-size: 28px;
+    color: #3b2e2a; /* Dark brown */
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 16px;
+    color: #3b2e2a;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contacts {
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+#contacts a {
+    color: #ffcc66; /* Light sunset yellow */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contacts a:hover {
+    color: #ff6600; /* Deeper sunset orange */
+}
+
+/* Form Styling */
+form {
+    margin-top: 30px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffcc66;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff9933;
+}
+
+/* Smooth Flowing Styles for Layout */
+section, footer, header {
+    animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
