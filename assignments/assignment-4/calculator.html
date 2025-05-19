@@ -10,6 +10,7 @@
 <!-- <link rel="stylesheet" href="styles/calculator.css" id="css-theme"> -->
 <script>
         const preferred = localStorage.getItem('calculatorTheme') || 'calculator';
+        console.log(`preferred css file: ${preferred}`);
         document.write(`<link rel="stylesheet" href="styles/${preferred}.css" id="css-theme">`);
       </script>
       
